@@ -1,1 +1,52 @@
 @import '~bootstrap/scss/bootstrap';
+
+nav{
+  .container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 0;
+    ul{
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      li{
+        font-weight: bold;
+        color: #464646;
+      }
+      li.active {
+        color: #0c7cec;
+        position: relative;
+      }
+      li.active::before {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 10px;
+          background-color: #0c7cec;
+          position: absolute;
+          bottom: -68px;
+      }
+    }
+    .search{
+      display: flex;
+      position: relative;
+      align-items: center;
+      .fa-solid{
+        position: absolute;
+        top: 45px;
+        right: 5px;
+      }
+      input{
+        border: 0;
+        border-bottom: 3px solid #0c7cec;
+      }
+    }
+  }
+}
+.jumbo{
+  height: 400px;
+  background-image: url('../img/jumbotron.jpg');
+}
