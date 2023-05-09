@@ -191,6 +191,80 @@ main{
 
 /* /css che gestisce la pagina principale*/
 
+/* css che gestisce la seconda pagina*/
+
+.single-comics{
+  position: relative;
+  border-top: 100px solid #0282f9;
+  .comic-pic{
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: -400px;
+    left: 250px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .container{
+    .main-container-top{
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      .left-section{
+        padding-right: 20px;
+        .title{
+          color: #003f5e;
+        }
+        .price{
+          margin: 20px 0;
+          background-color: #55ba59;
+          padding: 10px;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          .lightgreen{
+            color:#b0fd9c;
+          }
+          .check{
+            padding: 20px;
+          }
+        }
+      }
+      .right-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: gray;
+      }
+      padding-bottom: 80px;
+    }
+  }
+  .main-container-bottom{
+    background-color: #f6f6f6;
+    .container{
+      .main-container-inner{
+        display: flex;
+        justify-content: space-between;
+        .left{
+          max-width: 50%;
+          a{
+            text-decoration: none;
+          }
+        }
+        .right{
+          .info{
+            padding-left: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* /css che gestisce la seconda pagina*/
+
 /* css che gestisce i link */
 
 .link{
