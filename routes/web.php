@@ -26,3 +26,10 @@ Route::get('/Action_Comics', function () {
 
     return view('comic_page', compact('comics'));
 })->name('comic_page');
+
+Route::get('/American_Vampire', function () {
+
+    $comics = config('comics');
+
+    return view('American_Vampire', compact('comics'));
+})->name('American_Vampire');
